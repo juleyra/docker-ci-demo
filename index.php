@@ -1,6 +1,6 @@
 <?php
 $table = 'php_docker_table';
-$mysqli = new mysqli("db", $_ENV['MYSQL_USER'], $_ENV['MYSQL_PASSWORD'], $_ENV['MYSQL_DATABASE']);
+$mysqli = new mysqli("mysql", $_ENV['MYSQL_USER'], $_ENV['MYSQL_PASSWORD'], $_ENV['MYSQL_DATABASE']);
 $query = "SELECT * FROM ". $table;
 $result = $mysqli->query($query);
 
